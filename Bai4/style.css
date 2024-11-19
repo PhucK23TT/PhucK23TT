@@ -1,0 +1,186 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+/* Header Section */
+header {
+    position: relative;
+    background: url('images/header.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between; /* Align logo left, menu right */
+    align-items: center;
+    padding: 20px 50px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 0; /* Push logo to the left */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: #4caf50;
+}
+
+/* Hero Section */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Perfect centering */
+    color: white;
+}
+.hero-text {
+    text-align: center; /* Văn bản căn giữa theo chiều ngang */
+    position: absolute; /* Định vị văn bản trên hình ảnh */
+    top: 50%; /* Căn giữa theo chiều dọc */
+    left: 50%; /* Căn giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Dịch chuyển chính xác vào giữa */
+    color: white;
+    z-index: 1; /* Đảm bảo nội dung nằm trên ảnh */
+}
+
+.hero-text h2 {
+    font-size: 1.8rem; /* Cỡ chữ của "Sustainability" */
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 10px; /* Khoảng cách dưới */
+}
+
+.hero-text h1 {
+    font-size: 4rem; /* Cỡ chữ của "Starts with you" */
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.hero-text .btn {
+    display: inline-block;
+    margin-top: 20px; /* Khoảng cách trên nút */
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4caf50; /* Màu nền của nút */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero-text .btn:hover {
+    background-color: #45a049; /* Màu nền khi hover */
+}
+
+.intro {
+    justify-content: center;
+    max-width: 800px; /* Giới hạn chiều rộng */
+    margin: 0 auto 50px; /* Căn giữa và thêm khoảng cách dưới */
+    text-align: center; /* Căn giữa toàn bộ nội dung */
+    padding: 0 20px; /* Thêm khoảng cách bên */
+}
+
+.intro h1 {
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 25px; /* Khoảng cách giữa tiêu đề và đoạn văn */
+    color: #333; /* Màu chữ */
+    font-weight: bold;
+}
+
+.intro p {
+    text-align: center;
+    line-height: 1.8; /* Tăng khoảng cách giữa các dòng */
+    color: #555; /* Màu chữ xám nhạt */
+    font-size: 1rem;
+    margin-top: 10px; /* Khoảng cách trên đoạn văn */
+}
+
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: center; /* Căn giữa các thẻ */
+    gap: 30px; /* Khoảng cách giữa các thẻ */
+    flex-wrap: wrap; /* Đảm bảo giao diện responsive */
+    padding: 50px 20px; /* Khoảng cách bên trên và dưới */
+    max-width: 1200px;
+    margin: 0 auto; /* Căn giữa toàn bộ section */
+}
+
+.card {
+    background: white;
+    border-radius: 5px; /* Bo góc nhẹ */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    max-width: 500px; /* Chiều rộng tối đa mỗi thẻ */
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Hiệu ứng nổi khi hover */
+}
+
+.card img {
+    width: 100%; /* Ảnh phủ đầy chiều ngang thẻ */
+    height: auto;
+}
+
+.card h2 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card p {
+    padding: 0 20px 20px;
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Footer Section */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
